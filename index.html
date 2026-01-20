@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analysis Tool - Real-time Statistics</title>
+</head>
+
+<body>
+
+    <main class="analysis-card">
+        <header>
+            <h1>Text Analysis</h1>
+        </header>
+
+        <div class="input-group">
+            <label for="text-input">Enter or paste your text here to analyze</label>
+            <textarea id="text-input" placeholder="Type or paste your text here to analyze..."
+                aria-describedby="input-help">
+            </textarea>
+            <p id="input-help" class="visually-hidden">The statistics below will update automatically as you type.</p>
+        </div>
+
+        <section aria-label="Text statistics" aria-live="polite">
+            <ul class="stats-container">
+                <li>
+                    <h3>Total Words</h3>
+                    <p id="count-total-words">0</p>
+                </li>
+                <li>
+                    <h3>Total Characters</h3>
+                    <p id="count-total-characters">0</p>
+                </li>
+                <li>
+                    <h3>Characters (no spaces)</h3>
+                    <p id="total-character-no-spaces">0</p>
+                </li>
+            </ul>
+        </section>
+
+        <button type="button" id="reset-btn" accesskey="r">
+            Reset
+        </button>
+    </main>
+    <footer>
+        <p>Designed & Built by rkaus-dev</p>
+    </footer>
+</body>
+
+</html>
